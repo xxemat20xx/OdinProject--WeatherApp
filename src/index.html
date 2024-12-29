@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Weather App</title>
+</head>
+
+<body>
+    <section id="main-header">
+        <div class="current current-weather-content">
+            <div class="weather-search">
+                <input type="text" id="search-input" placeholder="Enter location">
+                <button id="search-button"><i class='bx bx-search'></i></button>
+            </div>
+            <div class="current-weather-display">
+
+            </div>
+
+        </div>
+        <div class="current nexthour-weather-container">
+            <h2 id="nextHourTitle"><img src="./images/other icons/schedule.png" alt=""> Weather in the next 24hrs:</h2>
+            <div id="weather-cards" class="draggable-container">
+                <div class="weather-card">
+                    <h2>Loading...</h2>
+                    <h3></h3>
+                    <span></span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="main-body-content">
+        <div id="weather-days-container" class="current">
+            <h2><img src="./images/other icons/calendar.png" alt=""> 15-Days Forecast</h2>
+            <div class="weather-15days-content">
+                <table>
+                    <!-- append table -->
+                </table>
+            </div>
+        </div>
+
+        <!-- current feels like and pressure info container -->
+        <div class="feelslike-pressure-container">
+            <div class="current feels-like-content">
+                <h2><img src="./images/other icons/temperature.png" alt=""> Feels like</h2>
+                <div class="current-feelslike-text">
+                    <!-- to append feels like info -->
+                </div>
+            </div>
+
+            <div class="current pressure-content">
+                <h2><img src="./images/other icons/pressure.png" alt=""> Pressure</h2>
+                <div class="current-pressure-text">
+                    <!-- to append pressure info -->
+
+                </div>
+            </div>
+        </div>
+        <div class="currenthumidity-and-wind-container">
+            <div class="current humidity-content">
+                <h2><img src="./images/other icons/humidity.png" alt=""> Humidity</h2>
+                <div class="humidity-text">
+                    <!-- append humidity details -->
+                </div>
+            </div>
+            <div class="current windspeed-content">
+                <h2><img src="./images/other icons/wind1.png" alt=""> Wind Speed</h2>
+                <div class="windspeed-text">
+                    <!-- append wind info -->
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

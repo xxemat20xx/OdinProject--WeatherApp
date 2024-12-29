@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+html,
+body {
+    font-family: "Outfit", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #fff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    background: rgb(154, 152, 153);
+    background: radial-gradient(circle, rgba(154, 152, 153, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    position: relative;
+    width: 100%;
+    height: 100dvh;
+
+}
+
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(26, 26, 26, 0.877), rgba(0, 0, 0, 0));
+    z-index: -1;
+}
+
+h1 {
+    font-weight: 800;
+}
+
+.current {
+    padding: 1em;
+    border-radius: 2em;
+    margin: 10px;
+    box-shadow: -1px 10px 39px 11px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: -1px 10px 39px 11px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -1px 10px 39px 11px rgba(0, 0, 0, 0.75);
+}
+
+/* MAIN TOP CONTENT */
+#main-header {
+    display: flex;
+    flex-wrap: wrap;
+    color: #fff;
+}
+
+.current-weather-content {
+    flex: 1;
+}
+
+.current-weather-content h1 {
+    display: inline;
+    font-size: 2em;
+}
+
+.nexthour-weather-container {
+    flex: 3;
+    overflow: hidden;
+    min-width: 320px;
+}
+
+.nexthour-weather-container span {
+    color: #fcbf49;
+}
+
+#weather-cards {
+    display: flex;
+    gap: 10px;
+    overflow: hidden;
+    padding: 0 10px;
+    border-radius: 2em;
+}
+
+#weather-cards .weather-card {
+    background-color: #343a40b9;
+    border-radius: 2em;
+    padding: 10px;
+    text-align: center;
+    min-width: 120px;
+    margin-top: 1em;
+}
+
+.weather-card img {
+    margin: auto;
+    display: block;
+}
+
+/* INPUT AND BUTTON CSS */
+input,
+button {
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+
+}
+
+input {
+    width: 60%;
+    margin-bottom: 2em;
+}
+
+button {
+    cursor: pointer;
+    background-color: #f77f00;
+    color: #fff;
+    width: 3em;
+    margin: auto;
+    transition: 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #fcbf49;
+}
+
+/* MAIN BODY CONTENT CSS(15DAYS CONTAINER AND OTHER INFOS) */
+#main-body-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#main-body-content img {
+    width: 32px;
+}
+
+#weather-days-container {
+    flex: 2.2;
+    min-width: 400px;
+}
+
+.current-feelslike-container {
+    flex: 2;
+    min-width: 300px;
+
+}
+
+.currenthumidity-and-wind-container,
+.feelslike-pressure-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.currenthumidity-and-wind-container .humidity-content {
+    flex: 1;
+}
+
+.currenthumidity-and-wind-container .windspeed-content {
+    flex: 3;
+    line-height: 2em;
+    font-size: 1.2em;
+}
+
+.feelslike-pressure-container .feels-like-content {
+    flex: 2;
+}
+
+.feelslike-pressure-container .feels-like-content h1 {
+    font-size: 3em;
+
+}
+
+.current-pressure-text h3 {
+    font-size: 2em;
+    font-weight: 400;
+}
+
+.pressure-content {
+    flex: 1;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    line-height: 1px;
+}
+
+tr:nth-child(even) {
+    background-color: #f780008f;
+    color: #fff;
+
+}
+
+/* DRAGGING CSS */
+.draggable-container {
+    cursor: grab;
+}
+
+.draggable-container.dragging {
+    cursor: grabbing;
+}
+
+/* Responsive background */
