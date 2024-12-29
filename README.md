@@ -2,7 +2,7 @@
 
 This is a Weather App project as part of [The Odin Project](https://www.theodinproject.com) curriculum. The app fetches and displays current weather data using the Visual Crossing Weather API. It allows users to search for weather information by city and view dynamic weather updates.
 
-![Weather App Preview](./src/images/Weather-app.jpg)
+![Weather App Preview](./Weather-app.jpg)
 
 ## Live Demo
 Check out the live version of the app here:
