@@ -6,7 +6,7 @@ This is a Weather App project as part of [The Odin Project](https://www.theodinp
 
 ## Live Demo
 Check out the live version of the app here:
-[Live Demo](https://xxemat20xx.github.io/OdinProject--WeatherApp/)
+[Weather App Live Demo](https://xxemat20xx.github.io/OdinProject--WeatherApp/)
 
 ## Features
 - Search for weather information by city.
